@@ -1,0 +1,17 @@
+def splitString(str): 
+	alpha = "" 
+	num = "" 
+	lalpha = "" 
+	for i in range(len(str)): 
+		if (str[i].isdigit()): 
+			num = num+ str[i] 
+		elif(str[i] >= 'A' and str[i] <= 'Z'):
+			alpha += str[i] 
+		elif(str[i] >= 'a' and str[i] <= 'z'): 
+			lalpha += str[i] 
+  
+	print(num+lalpha+alpha) 
+if __name__ == "__main__": 
+	
+	str = "gabAKLjk1b2Z5"
+	splitString(str) 
